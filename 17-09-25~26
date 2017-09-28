@@ -1,0 +1,7 @@
+Want to do and done:
+
+Want to do, haven't much capability yet:
+
+Have an idea:
+   1. Use Dictionary<string,List<string>> be a model to replace loop checkbox.
+   2. Use checkboxlist helper method replace loop/dectionary method.
