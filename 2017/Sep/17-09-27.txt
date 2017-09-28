@@ -14,7 +14,7 @@ Want to do and done:
                  $('input[type=checkbox]').prop("checked", this.checked);
              });
         
-Want to do but don't have enough capabilities:
+Want to do but don't have enough abilities:
    1. In jQuery, get List<string> from controller
           Try:       a. Try to use ViewBag, read it in jQuery, but can't convert it correct type.
           Solution:  b. Create a JSONResult in controller and get it in jQuery.
