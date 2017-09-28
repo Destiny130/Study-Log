@@ -1,5 +1,29 @@
 Want to do and done:
+  1. If there have a father checkbox and some children checkbox, I want to making the following function:
+                children all checked, father checked;  
+                children all uncheck, father uncheck;
+                least one child checked, father indeterminate
+       By now, I use a loop method to implement this function.
+          function countlength(){
+              if($("#children").length == $("#children:checked").length){
+                  $("#father").attr("indeterminate",false);
+                  $("#father").attr("checked",true);
+                  $("#father").prop("checked",true);
+              }
+              else if($("#children").length >0 ){
+                  $("#father").attr("indeterminate",true);
+                  $("#father").prop("indeterminate",true);
+              }
+              else
+              {
+                  $("#father").attr("indeterminate",false);
+                  $("#father").attr("checked",false);
+              }
+          }
 
 Want to do but haven't enough capabilities:
+    
 
 Have some ides but haven't try it yet:
+  1. Use parent/children method in jQuery to excute what want to do in above.
+  2. Use JS ...
