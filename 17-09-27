@@ -23,9 +23,7 @@ Want to do but don't have enough capabilities:
    2. Use for loop in jQuery.
                      
 Have an idea but haven't try it yet:
-   1. Use Dictionary<string,List<string>> be a model to replace loop checkbox.
-   2. Use checkboxlist helper method replace loop/dectionary method.
-   3. Simplify checkbox loop block, then use parent/children method in jQuery.
+   1. Simplify checkbox loop block, then use parent/children method in jQuery.
 
 
 You can study jQuery in this website: http://www.w3school.com.cn/jquery/index.asp
