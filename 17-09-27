@@ -1,0 +1,19 @@
+Want to do and done:
+   1. Normal select with jQuery. Like $("#id") to find element with id.
+   2. Change properties or values. Like $("#example").attr(...) or $("#example").text("...")
+   3. Create a dynamic array in jQuery. 
+          First create a string to collection array element split by ",", then use split method split them into a array.
+   4. Use each function.
+          $.each(todolist,function(i,item){...  //item is the element in the todolist})
+        
+Want to do but don't have enough capabilities:
+   1. In jQuery, get List<string> from controller
+          Try:       1. Try to use ViewBag, read it in jQuery, but can't convert it correct type.
+          Solution:  1. Create a JSONResult in controller and get it in jQuery.
+                     2. Use AJAX (no clue about it).
+                     3. Others.
+                     
+Have an idea but haven't try it yet:
+   1. Use Dictionary<string,List<string>> be a model to replace loop checkbox.
+   2. Use checkboxlist helper method replace loop/dectionary method.
+   3. Simplify checkbox loop block, then use parent/children method in jQuery.
