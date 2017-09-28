@@ -5,13 +5,15 @@ Want to do and done:
           First create a string to collection array element split by ",", then use split method split them into a array.
    4. Use each function.
           $.each(todolist,function(i,item){...  //item is the element in the todolist})
+   5. 
         
 Want to do but don't have enough capabilities:
    1. In jQuery, get List<string> from controller
-          Try:       1. Try to use ViewBag, read it in jQuery, but can't convert it correct type.
-          Solution:  1. Create a JSONResult in controller and get it in jQuery.
-                     2. Use AJAX (no clue about it).
-                     3. Others.
+          Try:       a. Try to use ViewBag, read it in jQuery, but can't convert it correct type.
+          Solution:  b. Create a JSONResult in controller and get it in jQuery.
+                     c. Use AJAX (no clue about it).
+                     d. Others.
+   2. Use for loop in jQuery.
                      
 Have an idea but haven't try it yet:
    1. Use Dictionary<string,List<string>> be a model to replace loop checkbox.
