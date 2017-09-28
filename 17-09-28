@@ -6,7 +6,7 @@ Want to do and done:
        By now, I use a loop method to implement this function.
           function countlength(){
               if($("#children").length == $("#children:checked").length){
-                  $("#father").attr("indeterminate",false);
+                  $("#father").prop("indeterminate",false);
                   $("#father").attr("checked",true);
                   $("#father").prop("checked",true);
               }
@@ -16,7 +16,7 @@ Want to do and done:
               }
               else
               {
-                  $("#father").attr("indeterminate",false);
+                  $("#father").prop("indeterminate",false);
                   $("#father").attr("checked",false);
               }
           }
