@@ -1,7 +1,18 @@
 Want to do and done:
-
-Want to do, haven't much capability yet:
-
+   1. Use FormCollection to collection element from View by find id.
+      For checkbox, if it's null, meaning View's checkbox not checked.
+                    (But I feel it's not a safe method, maybe View have another element with the same id and has value)
+   2. ViewBag can transport a anonymous type, but it can't accept it correctly in View.
+      To fix it, use a Tuple method to send the anonymous type.
+            Controller:   ViewBag.anony = db.ExampleDB.Select(a => Tuple.Create(a.ID, a.Name, a.Des));
+            View:         @foreach(var ano in ViewBag.anoy)
+                          {    @ano.Item1 //read the first element in anonymous type...   }
+   3. Use foreach loop in View.
+   4. Use BeginForm to post data to controller.
+      
+Want to do,tried but haven't much capability yet:
+   
 Have an idea:
    1. Use Dictionary<string,List<string>> be a model to replace loop checkbox.
    2. Use checkboxlist helper method replace loop/dectionary method.
+   
