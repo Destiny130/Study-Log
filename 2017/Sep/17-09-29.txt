@@ -1,7 +1,9 @@
 Want to do and completed
    1. Found a JS method that can execute better function yesterday.
             https://codepen.io/chriscoyier/pen/JYyXjX        or in         https://github.com/TheNotary/IndeterminateCheckboxes
-   2.
+   2. Create a Dictionary<string,List<SelectListItem>> to transmit a model
+      Use two foreach method in both controller and view to write/read data with loop.
+   
 Want to do, tried but don't have enough abilities
 
 
