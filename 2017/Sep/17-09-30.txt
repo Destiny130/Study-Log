@@ -1,10 +1,17 @@
 Tech I done today:
-   1. I know how to convert a List<string> in jQuery where data come from the Controller.
+   1. Get the data from the Model.
+            @model Dictionary<string,List<SelectListItem>>
+            var data = @Html.Raw(Json.Encode(Model.Keys));   //data is an array already.
+            $("#testspan").text(data[2]);   //Just read it.
+   
+Want to but no ability yet:
+   1. I know how to deliver a List<string> in jQuery where data come from the Controller.
             Controller: List<string> list = new List<string>{"s","d","f"};
                         ViewBag.list = list;
-            jQuery:     var data = @Html.Raw(Json.Encode(ViewBag.list));
-            Page:       ["s","d","f"]
+            jQuery:     var data = @Html.Raw(Json.Encode(@ViewBag.list));  //data is a string, should split it.
+                        $("#testspan").text(data);
+      But the page shows:   ["s","d","f"]
+      I found when take a string list, it will add " automatic, maybe should write a method like trim to delete it.
 
-Want to but no ability yet:
 
 Maybe carry out later:
