@@ -8,6 +8,7 @@ Tech I done today:
       For now, I use formcollection["name"].ToString().Contains("true") to check the checkbox checked or not.
    3. Each Html.Checkbox will creat two input element, we should halve it when we try to get the real count.
       This will happen when we count checked number to set the indeterminate property.
+   4. Use the .siblings method in jQuery.
    
 Want to but no ability yet:
    1. I know how to deliver a List<string> in jQuery where data come from the Controller.
