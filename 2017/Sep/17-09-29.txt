@@ -1,13 +1,16 @@
-Want to do and completed
+Want to do and completed:
    1. Found a JS method that can execute better function yesterday.
             https://codepen.io/chriscoyier/pen/JYyXjX        or in         https://github.com/TheNotary/IndeterminateCheckboxes
    2. Create a Dictionary<string,List<SelectListItem>> to transmit a model
       Use two foreach method in both controller and view to write/read data with loop.
    
-Want to do, tried but don't have enough abilities
+Want to do, tried but don't have enough abilities:
 
 
-Have an idea, and would try it later
+Have an idea, and would try it later:
+   1. For now, I use a Linq collection to transmit the data between the Controller and the View.
+      That makes me set the model what I definition.Then use Linq again to wirte the data to the DataBase.
+      But I want let the db.SysRoleAuth be the model, to use this model, it can bind the post data to DB directly.
 
 
 
