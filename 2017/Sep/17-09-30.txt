@@ -1,4 +1,9 @@
 Tech I done today:
+   1. I know how to convert a List<string> in jQuery where data come from the Controller.
+            Controller: List<string> list = new List<string>{"s","d","f"};
+                        ViewBag.list = list;
+            jQuery:     var data = @Html.Raw(Json.Encode(ViewBag.list));
+            Page:       ["s","d","f"]
 
 Want to but no ability yet:
 
