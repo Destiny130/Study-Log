@@ -9,7 +9,7 @@ Want to do, tried but don't have enough abilities:
 
 Have an idea, and would try it later:
    1. For now, I use a Linq collection to transmit the data between the Controller and the View.
-      That makes me set the model what I definition.Then use Linq again to wirte the data to the DataBase.
+      That makes me can set the model what I definition.Then use Linq again to wirte the data to the DataBase.
       But I want let the db.SysRoleAuth be the model, to use this model, it can bind the post data to DB directly.
 
 
