@@ -23,8 +23,13 @@ Want to but no ability yet:
 Maybe carry out later:
    1. For now, I use Linq to inquiry data then write it in to DB.
       But I want to create a strong View by use DB model which be selected first.
-      Now there be about two question:
+      Now there be about three question:
          a. I create that model in the SetAuth Action by using Linq,
             when I write the post data to DB, is it use Linq again implicit.
          b. Does this method create a cleaner page?
-         c. Could it use less loop?(This isn't I worried about, looping the db.sys doesn't expend much resources)
+         c. Could it use less loop?(This isn't I worried about, looping the db.sys doesn't expend much resources,
+                                    it's a small DB, only have dozens items)
+   2. Could I simplify jQuery code recently, I think it's too inefficient what I wrote those days.
+      Every click will invoking some function, then ergodic many elements in the page
+      which I just want ergodic siblings/parent/children.
+   3. Learning some Ajax.
