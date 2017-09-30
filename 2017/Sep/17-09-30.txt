@@ -3,6 +3,9 @@ Tech I done today:
             @model Dictionary<string,List<SelectListItem>>
             var data = @Html.Raw(Json.Encode(Model.Keys));   //data is an array already.
             $("#testspan").text(data[2]);   //Just read it.
+   2. If use @Html.checkbox in the View, when we get the post data in the controller,
+      we'll get one or two value which checkbox checked true will have true and false, uncheck will have false.
+      For now, I use formcollection["name"].ToString().Contains("true") to check the checkbox checked or not.
    
 Want to but no ability yet:
    1. I know how to deliver a List<string> in jQuery where data come from the Controller.
