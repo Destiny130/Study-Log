@@ -1,3 +1,4 @@
 Something will test later:
-   1. After add a transform property in father container, child element with fixed property will posited which related father container.
+   1. After add a transform property in father container, child element with fixed property will
+      posited which related father container.
       Specific could checked in the picture.
