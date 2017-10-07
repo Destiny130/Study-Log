@@ -1,1 +1,8 @@
 Learning some elementary course of JavaScript.
+  1. JS only have number type.
+  2. Bool can only have two value, can't be null.
+  3. JS can create a dynamic array, I can use some function add new element to an array which already created.
+  
+Will figure out it later:
+  1. Can JS create a dynamic array?         <b>CAN</b>
+     I want to use a function with click to add a element in array while button click, and count array length to check it.
