@@ -1,0 +1,2 @@
+Continue learning JS:
+   1. Add a number to a string, resule will be a string.
