@@ -4,7 +4,14 @@ Learning some elementary course of JavaScript.
   3. JS can create a dynamic array, I can use some function add new element to an array which already created.
   4. JS can create a anonymous type, and use it just like C#.
   5. Object created in JS is very flexible, we can add as much properties as we want.
-  
+  6. Assign a value to a variable which didn't declared in a function, JS will create it as a golbal variable.
+     function aFunction()                                     function aFunction()
+     { ...                                                    { ...
+       var name = "Volvo";                                      var name = "Volvo";
+       carname = name;     //Golbal variable                    var carname = name;  //Local variable
+       ...                                                      ...
+     }                                                        }
+
 Will figure out it later:
   1. Can JS create a dynamic array?         CAN
      I want to use a function with click to add a element in array while button click, and count array length to check it.
