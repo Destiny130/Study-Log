@@ -4,7 +4,7 @@ Continue learning JS:
    3. for/in in JS can generate a loop which can only get object's properties but elements in array.
    4. Use break and continue in for loop to control out result.
    5. continue with or without label cite can only use in the loop;
-      break without label cite can only use in the loop, but with label cite can use in the block to interrupt block sentment.
+      break without label cite can only use in the loop, but with label cite it can jump out any JS block.
 
 New things:
    1. 
