@@ -15,6 +15,7 @@ Study JS:
 
 Little complicated?
    1. Show a clock in the page:     http://www.w3school.com.cn/tiy/t.asp?f=jsrf_date_timing_clock
+   2. RegExp     http://www.w3school.com.cn/jsref/jsref_obj_regexp.asp
 
 
 
