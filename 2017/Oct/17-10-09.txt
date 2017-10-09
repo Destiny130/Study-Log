@@ -1,5 +1,8 @@
 Study JS:
    1. JS validate can identify element by id or name, if one of them can be matched, the validate will come into operation.
+   2. getElementById("demo"), getElementsByName("demo"), getElementsByTagName("div")
+   3. x.attribute = new value,           x.width = 150px;
+      x.style.property = new value,      x.style.color = "red";   x.style.font-weight = "normal";
 
 
 
