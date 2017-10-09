@@ -2,6 +2,7 @@ Continue learning JS:
    1. Add a number to a string, resule will be a string.
    2. For for loop, we can let the statement3 in  the block, then we can set some condiction to handle it, not blindly add/subtract.
    3. for/in in JS can generate a loop which can only get object's properties but elements in array.
+      17-10-09: for/in can also create a loop to get every element in an array.
    4. Use break and continue in for loop to control out result.
    5. continue with or without label cite can only use in the loop;
       break without label cite can only use in the loop, but with label cite it can jump out any JS block.
