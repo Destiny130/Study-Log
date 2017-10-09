@@ -3,6 +3,7 @@ Study JS:
    2. getElementById("demo"), getElementsByName("demo"), getElementsByTagName("div")
    3. x.attribute = new value,           x.width = 150px;
       x.style.property = new value,      x.style.color = "red";   x.style.font-weight = "normal";
+   4. About bind() and on() in JS, http://blog.csdn.net/longgejia/article/details/74277801
 
 
 
