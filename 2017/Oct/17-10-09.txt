@@ -11,6 +11,7 @@ Study JS:
    7. for/in can also create a loop which can get every element in an array.
          for (x in myArray) { //use x as an index number. }
    8. Some instance of the array.     http://www.w3school.com.cn/js/js_obj_array.asp
+   9. JS CAN create a dayamic array, which can use a loop to add element to it.
 
 Little complicated?
    1. Show a clock in the page:     http://www.w3school.com.cn/tiy/t.asp?f=jsrf_date_timing_clock
