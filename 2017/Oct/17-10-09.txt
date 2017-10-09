@@ -6,7 +6,8 @@ Study JS:
    4. About bind() and on() in JS, http://blog.csdn.net/longgejia/article/details/74277801
    5. x.onclick = function(){ myFunction() };
       function myFunction(){ ... }
-   6.
+   6. onfocus() vs onblur().
+      I can use onfocus and onblur to actualize input element's value dynamic change.
 
 
 
