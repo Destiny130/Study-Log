@@ -7,7 +7,7 @@ Study JS:
    5. x.onclick = function(){ myFunction() };
       function myFunction(){ ... }
    6. onfocus() vs onblur().
-      I can use onfocus and onblur to actualize input element's value dynamic change.
+      I can use onfocus and onblur to actualize input element's value dynamic change. Use value property in the input element.
 
 
 
