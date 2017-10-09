@@ -4,8 +4,8 @@ Tech I done today:
             var data = @Html.Raw(Json.Encode(Model.Keys));   //data is an array already.
             $("#testspan").text(data[2]);   //Just read it.
    2. If use @Html.checkbox in the View, when we get the post data in the controller,
-      we'll get one or two value which checkbox checked true will have true and false, uncheck will have false.
-      For now, I use formcollection["name"].ToString().Contains("true") to check the checkbox checked or not.
+      we'll get one or two value which checkbox checked will have true and false, uncheck will have false.
+      For now, I use formcollection["name"].ToString().ToLower().Contains("true") to check the checkbox checked or not.
    3. Each Html.Checkbox will creat two input element, we should halve it when we try to get the real count.
       This will happen when we count checked number to set the indeterminate property.
    4. Use the .siblings method in jQuery.
