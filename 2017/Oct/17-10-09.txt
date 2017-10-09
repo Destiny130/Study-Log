@@ -9,6 +9,7 @@ Study JS:
    6. onfocus() vs onblur().
       I can use onfocus and onblur to actualize input element's value dynamic change. Use value property in the input element.
    7. for/in can also create a loop which can get every element in an array.
+         for (x in myArray) { //use x as an index number. }
 
 Little complicated?
    1. Show a clock in the page:     http://www.w3school.com.cn/tiy/t.asp?f=jsrf_date_timing_clock
