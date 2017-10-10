@@ -4,3 +4,6 @@ Today's lesson:
             <div style="position:absolute;bottom:0px;">123</div>   
          </td>
          //Those sentences will set the div be the bottom in td.
+   2. When we use '@Html.BeginForm' method, if we don't specify FormMethod is Get or Post, it will set Post as submit status.
+      In this default case, what we defined style in htmlAttributes will no longer effective. 
+      We should write complete '@Html.BeginForm' sentence to let it effective.
