@@ -9,4 +9,4 @@ Today's lesson:
       We should write complete '@Html.BeginForm' sentence to let it effective.
    3. In the view, when we set htmlAttributes, use 'new { @class="table", @style="border:1px" }' 
       Warning: Last property in style can't add ';' in the end.
-      About 'width' and 'height', they can be set without use '@style'.
+      About 'width' and 'height', they can be set without use '@style', but they will be set first which could be covered later.
