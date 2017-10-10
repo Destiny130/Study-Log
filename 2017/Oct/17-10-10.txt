@@ -1,5 +1,5 @@
 Today's lesson:
-   1. position:absolute is related with the nearest father position:relative.
+   1. "position:absolute" is related with the nearest father node which has style "position:relative".
          <td style="height:100px;position:relative;">
             <div style="position:absolute;bottom:0px;">123</div>   
          </td>
