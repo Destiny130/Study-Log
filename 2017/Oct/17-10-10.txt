@@ -7,3 +7,6 @@ Today's lesson:
    2. When we use '@Html.BeginForm' method, if we don't specify FormMethod is Get or Post, it will set Post as submit status.
       In this default case, what we defined style in htmlAttributes will no longer effective. 
       We should write complete '@Html.BeginForm' sentence to let it effective.
+   3. In the view, when we set htmlAttributes, use 'new { @class="table", @style="border:1px" }' 
+      Warning: Last property in style can't add ';' in the end.
+      About 'width' and 'height', they can be set without use '@style'.
