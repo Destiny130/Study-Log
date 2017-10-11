@@ -18,7 +18,7 @@ Want to but no ability yet:
                         $("#testspan").text(data);
       But the page shows:   ["s","d","f"]
       I found when take a string list, it will add " automatic, maybe should write a method like trim to delete it.
-
+      2017-10-11!! The data in '<script>' is an array, its type just like create an array in '<script>'.
 
 Maybe carry out later:
    1. For now, I use Linq to inquiry data then write it in to DB.
