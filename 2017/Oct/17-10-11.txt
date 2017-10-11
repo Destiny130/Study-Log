@@ -18,7 +18,14 @@ Today's findings:
             </script>
             
             
-Mission:
-   1. I want to write a similar method by using 'onkeyup' event.
-      I can use a float 'div' to show 'DropDownList'.
+Tried today:
+   1. I want to write a similar method by using 'keyup' event with jquery.But having following questionos:
+         a. I saw the 'jquery-ui.js' used a hidden 'ul' to show the candidate list.
+            I imitated it but I couldn't set the position correctly.
+   
+   
+   
+   
+Ideas:
+   1. I can use a float 'div' to show 'DropDownList'.
       Further things may be done by the browser.(DropDownList's style...)
