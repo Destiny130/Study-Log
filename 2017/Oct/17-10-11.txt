@@ -2,4 +2,8 @@ Today's findings:
    1. When we use 'ViewBag' to transport a list to the view, we take it in 'script' which use  following sentence:
             var list = @Html.Raw(Json.Encode(@ViewBag.listname));
       Then the list we created that its' type just like an array created in the '<script>'.
-      
+   2. Fond an AutoComplete Widget which maybe have more function I don't find yet.
+      I use it to achieve a function that the 'input' in the page will be real-time obtained, and will generate a 'DropDownList'    
+   which contains all posibility result what you may want to type in.
+      The widget's website in here:     http://api.jqueryui.com/autocomplete/
+      The 'jquery-ui.css' and 'jquery-ui.js' are in the father folder.
