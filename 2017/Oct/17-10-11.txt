@@ -1,2 +1,5 @@
-AJAX! 233333
-   1. as
+Today's findings:
+   1. When we use 'ViewBag' to transport a list to the view, we take it in 'script' which use  following sentence:
+            var list = @Html.Raw(Json.Encode(@ViewBag.listname));
+      Then the list we created that its' type just like an array created in the '<script>'.
+      
