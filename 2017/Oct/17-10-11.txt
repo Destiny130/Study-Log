@@ -16,3 +16,9 @@ Today's findings:
               source: tags
             });
             </script>
+            
+            
+Mission:
+   1. I want to write a similar method by using 'onkeyup' event.
+      I can use a float 'div' to show 'DropDownList'.
+      Further things may be done by the browser.(DropDownList's style...)
