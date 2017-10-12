@@ -6,7 +6,7 @@ New knowledge:
           
    2. I writen a auto complete by myself.
           In controller:  List<string> strList = new List<string>() { "123", "234", "489", "asd", "asdf", "asfg"};
-                         ViewBag.strlist = strList;
+                          ViewBag.strlist = strList;
           In View:  
              <div style="display:inline;position:relative;">
                 <input id="autocomplete" name="autocomplete" value="" style="width:150px;position:relative" />
@@ -22,8 +22,8 @@ New knowledge:
                     var innerhtml = "";     //Initialize the innerHTML of the candadite list.
                     if(typein != null && typein != ""){
                        $.each(listsou,function(i,item){  //Ergodic source list and find matching item.
-                          if (item.indexOf(typein)>-1){
-                              innerhtml += '<li id="'+item + '" style="width:140px;" class="' + item + '">' + item +'</li>';
+                          if (item.indexOf(typein) > -1){
+                              innerhtml += '<li id="'+item + '" style="width:140px;">' + item +'</li>';
                           }
                        });
                        if(innerhtml != ""){
