@@ -3,3 +3,38 @@ New knowledge:
       we can use the following two method:
           a. Replace 'click' with 'mousedown'.
           b. Use 'delay' in 'blur', put '$("#test").delay(100).hide(100);' in 'blur' function.
+          
+   2. I writen a auto complete by myself.
+          In controller:  List<string> strList = new List<string>() { "123", "234", "489", "asd", "asdf", "asfg"};
+                         ViewBag.strlist = strList;
+          In View:  
+             <div style="display:inline;position:relative;">
+                <input id="autocomplete" name="autocomplete" value="" style="width:150px;position:relative" />
+                <ul id="candlist" style="display:none;list-style:none;position:absolute;background-color:white;
+                    border:1px solid grey;left:0;padding:4px;"></ul>
+             </div>
+             <script>
+                 var ac = $("#autocomplete");
+                 var candlist = $("#candlist");
+                 var listsou = @Html.Raw(Json.Encode(@ViewBag.strlist));  //Get the source list.
+                 ac.keyup(function () {     //Every key up in the input, this function will search match element.
+                    var typein = ac.val();  //Get input value.
+                    var innerhtml = "";     //Initialize the innerHTML of the candadite list.
+                    if(typein != null && typein != ""){
+                       $.each(listsou,function(i,item){  //Ergodic source list and find matching item.
+                          if (item.indexOf(typein)>-1){
+                              innerhtml += '<li id="'+item + '" style="width:140px;" class="' + item + '">' + item +'</li>';
+                          }
+                       });
+                       if(innerhtml != ""){
+                          candlist.html(innerhtml);
+                          candlist.show();
+                       }
+                       else{ candlist.hide(); }
+                    }
+                    else { candlist.hide(); }
+                 });
+                 candlist.on("mousedown","li",function(){ ac.val(this.innerHTML); });  //Use choosen value fills in the input.
+                 ac.blur(function(){ candlist.hide(); });
+              </script>
+              <style> li:hover{ background-color:rgba(215, 215, 215, 0.4); } </style>
