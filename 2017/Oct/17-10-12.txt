@@ -42,7 +42,7 @@ New knowledge:
    3. Learend ajax this afternoon,simple useage it's unexpected simple.
       a. Without arguments:
          In Controller:   public ActionResult GetSomeData(){
-                              string testval = "choosen value isn't SONY";
+                              string testval = "You can choose SONY";
                               return Content(testval);     }
          In View:  <div>
                        <select id="selectlist">
@@ -53,20 +53,50 @@ New knowledge:
                        </select><br />
                        <div id="result">~</div>
                    </div>
-               <script>
-                   $(document).ready(function () {
-                       $("#selectlist").change(function () {
-                           $.ajax({
-                               type: "Post",
-                               url: "/controllername/actionname",
-                               data: "",
-                               success: function (sesponseTest) {
-                                   $("#result").html(sesponseTest);
-                               }
+                   <script>
+                       $(document).ready(function () {
+                           $("#selectlist").change(function () {
+                               $.ajax({
+                                   type: "Post",
+                                   url: "/controllername/actionname",
+                                   data: "",
+                                   success: function (sesponseTest) {
+                                       $("#result").html(sesponseTest);
+                                   }
+                               });
                            });
                        });
-                   });
-               </script>
+                   </script>
+      b. With arguments:
+         In controller:    public ActionResult GetSomeData(int value1)
+                           {
+                               string testval = value == 1 ? "SONY!" : "Other company~";
+                               return Content(testval);     
+                           }
+         In View:    <div>
+                       <select id="selectlist">
+                           <option value="1">SONY</option>
+                           <option value="2">KDDI</option>
+                           <option value="3">Apple</option>
+                           <option value="4">Sum</option>
+                       </select><br />
+                       <div id="result">~</div>
+                   </div>
+                   <script>
+                       $(document).ready(function () {
+                           $("#selectlist").change(function () {
+                               var value1 = this.value;
+                               $.ajax({
+                                   type: "Post",
+                                   url: "/controllername/actionname",
+                                   data: "value1=" + value1,
+                                   success: function (sesponseTest) {
+                                       $("#result").html(sesponseTest);
+                                   }
+                               });
+                           });
+                       });
+                   </script>
 
 
 
