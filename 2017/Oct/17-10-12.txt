@@ -40,4 +40,38 @@ New knowledge:
               <style> li:hover{ background-color:rgba(215, 215, 215, 0.4); } </style>
    
    3. Learend ajax this afternoon,simple useage it's unexpected simple.
-                          
+      a. Without arguments:
+         In Controller:   public ActionResult GetSomeData(){
+                              string testval = "choosen value isn't SONY";
+                              return Content(testval);     }
+         In View:  <div>
+                       <select id="selectlist">
+                           <option value="1">SONY</option>
+                           <option value="2">KDDI</option>
+                           <option value="3">Apple</option>
+                           <option value="4">Sum</option>
+                       </select><br />
+                       <div id="result">~</div>
+                   </div>
+               <script>
+                   $(document).ready(function () {
+                       $("#selectlist").change(function () {
+                           $.ajax({
+                               type: "Post",
+                               url: "/controllername/actionname",
+                               data: "",
+                               success: function (sesponseTest) {
+                                   $("#result").html(sesponseTest);
+                               }
+                           });
+                       });
+                   });
+               </script>
+
+
+
+
+
+
+
+
