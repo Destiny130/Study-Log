@@ -1,0 +1,5 @@
+New knowledge:
+   1. If I use a 'click' and a 'blur' in jquery, 'blur' will happen before 'click',to solve this,
+      we can use the following two method:
+          a. Replace 'click' with 'mousedown'.
+          b. Use 'delay' in 'blur', put '$("#test").delay(100).hide(100);' in 'blur' function.
