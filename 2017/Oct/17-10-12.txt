@@ -1,7 +1,7 @@
 New knowledge:
    1. If I use a 'click' and a 'blur' in jquery, 'blur' will happen before 'click',to solve this,
       we can use the following two method:
-          a. Replace 'click' with 'mousedown'.
+         a. Replace 'click' with 'mousedown'.
           b. Use 'delay' in 'blur', put '$("#test").delay(100).hide(100);' in 'blur' function.
           
    2. I writen a auto complete by myself.
@@ -38,3 +38,6 @@ New knowledge:
                  ac.blur(function(){ candlist.hide(); });
               </script>
               <style> li:hover{ background-color:rgba(215, 215, 215, 0.4); } </style>
+   
+   3. Learend ajax this afternoon,simple useage it's unexpected simple.
+                          
