@@ -39,7 +39,7 @@ New knowledge:
               </script>
               <style> li:hover{ background-color:rgba(215, 215, 215, 0.4); } </style>
    
-   3. Learend ajax this afternoon,simple useage it's unexpected simple.
+   3. Learend ajax this afternoon,simple useage is unexpected simple.
       a. Without arguments:
          In Controller:   public ActionResult GetSomeData(){
                               string testval = "You can choose SONY";
