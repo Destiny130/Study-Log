@@ -28,8 +28,9 @@ Today's mission:
                                 return Content(innerhtml);
                             }
                             
-
-
-
-Much things need to learn:
-   1. In ajax, how to transport parameter which type is array, list and other type.
+Not Fixed today:
+   1. I tried to 'post' a array to 'Controller', I get it by using 'JsonResult' like: GetActionName(int id, JsonResult list).
+      But I couldn't turn it to its original type, like 'string[]' or 'int[]'.
+      I used parameter's property '.Data' and it's 'null'.
+      
+      
