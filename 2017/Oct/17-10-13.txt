@@ -1,5 +1,35 @@
 Today's mission:
-   1. Transport two parameters in ajax with jquery.
+   1. Transport many single type parameter to 'Controller':
+          In View:    <script>
+                          $(document).ready(function(){
+                              var id = @Html.Raw(Json.Encode(@ViewBag.id));
+                              $("selectlist").change(function(){
+                                  var selectedval = this.value;
+                                  var obj = { param1: id, param2: selectedval };
+                                  $.ajax({
+                                      type: "post",
+                                      url: "controllername/actionname",
+                                      data: obj,
+                                      success: function(sesponseTest){
+                                          $("#testP").html(sesponseTest);
+                                      },
+                                      error: function(XMLHttpRequest, textStatus, errorThrown){
+                                          alert(XMLHttpRequest.status);
+                                          alert(XMLHttpRequest.readyState);
+                                          alert(textStatus);
+                                      }
+                                  });
+                              });
+                          });
+                      </script>
+          In Controller:    public ActionResult GetActionName(int id, string selectedval)
+                            {
+                                string innerhtml = id.ToString() + selectedval;
+                                return Content(innerhtml);
+                            }
+                            
+
+
 
 Much things need to learn:
    1. In ajax, how to transport parameter which type is array, list and other type.
