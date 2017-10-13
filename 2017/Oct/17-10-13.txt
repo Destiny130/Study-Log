@@ -1,1 +1,5 @@
+Today's mission:
+   1. Transport two parameters in ajax with jquery.
 
+Much things need to learn:
+   1. In ajax, how to transport parameter which type is array, list and other type.
