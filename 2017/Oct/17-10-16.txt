@@ -11,6 +11,7 @@ Today's studies:
    6. Add '<option disabled selected value></option>' as 'DropDownList's first element, when its page onload,
       its default selected element is none.
    7. Use 'ele.html(myArr.length)' in jQuery syntax, use 'ele.html = myArr.length' in JS syntax.
+   8. 'fixed' property is not realated with 'position:relative'.
 
 
 Today I use ajax complete one job in work program, but it can be done by simpler method.
