@@ -1,7 +1,7 @@
 Learning some elementary course of JavaScript.
   1. JS only have number type.
   2. Bool can only have two value, can't be null.
-  3. JS can create a dynamic array, I can use some function add new element to an array which already created.
+  3. JS can create a dynamic array,so I can use some function add new element to an array which already created.
   4. JS can create a anonymous type, and use it just like C#.
   5. Object created in JS is very flexible, we can add as much properties as we want.
   6. Assign a value to a variable which didn't declared in a function, JS will create it as a golbal variable.
