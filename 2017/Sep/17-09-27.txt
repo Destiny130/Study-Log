@@ -1,7 +1,7 @@
 Want to do and done:
    1. Normal select with jQuery. Like $("#id") to find element with id.
    2. Change properties or values. Like $("#example").attr(...) or $("#example").text("...")
-   3. Create a dynamic array in jQuery. 
+   3. Create a dynamic array in jQuery.     17-10-16:For now, every array in js is dynamic, add element like 'arr[i+1]=99' or 'arr.push(99)'
           First create a string to collection array element split by ",", then use split method split them into a array.
    4. Use each function.
           $.each(todolist,function(i,item){...  //item is the element in the todolist})
