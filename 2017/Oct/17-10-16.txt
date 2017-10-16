@@ -1,8 +1,8 @@
 Today's studies:
    1. Using ajax in the program.
    2. To transform xml data as its originally, use 'HtmlEncode(xmldata)' in 'Controller', then transform it as a string.
-   3. Used 'style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px"' to control a long string show in a single line,
-      other part show as a '...'.
+   3. Used 'style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px"' 
+      to control a long string show in a single line, other part show as a '...'.
    4. 'position:absolute' is realated with its father container.
    5. 'word-break' has three mode:
           break-all: according to container's width to wrap, it can break a word to two parts.
@@ -10,6 +10,7 @@ Today's studies:
           normal: default as browser settings.
    6. Add '<option disabled selected value></option>' as 'DropDownList's first element, when its page onload,
       its default selected element is none.
+   7. Use 'ele.html(myArr.length)' in jQuery syntax, use 'ele.html = myArr.length' in JS syntax.
 
 
 Today I use ajax complete one job in work program, but it can be done by simpler method.
