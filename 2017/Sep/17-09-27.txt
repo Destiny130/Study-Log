@@ -5,7 +5,7 @@ Want to do and done:
           First create a string to collection array element split by ",", then use split method split them into a array.
    4. Use each function.
           $.each(todolist,function(i,item){...  //item is the element in the todolist})
-   5. If I want to implement a select all function with checkbox, when I click it third time, it didn't word anymore.
+   5. If I want to implement a select all function with checkbox, when I click it third time, it didn't work anymore.
       Solution is append .prop in click(funtion(){...})
              $("#selectAll").click(function () {
                  $("input[type=checkbox]").attr("checked", true);
