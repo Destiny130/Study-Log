@@ -10,3 +10,7 @@ Today's studies:
           normal: default as browser settings.
    6. Add '<option disabled selected value></option>' as 'DropDownList's first element, when its page onload,
       its default selected element is none.
+
+
+Today I use ajax complete one job in work program, but it can be done by simpler method.
+So, first I will change it tomorrow. Second, I reminded myself, careful for the solidified thinking.
