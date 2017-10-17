@@ -1,0 +1,51 @@
+Knowledge learned today:
+   1. Knew how to post an object which is a self defined type in JS to 'Controller'.
+         In view: <script>
+                      var id = @Html.Raw(Json.Encode(@ViewBag._id));
+                      var obj = new Object();
+                      obj.searchName = "Le";
+                      obj.searchID = 123;
+                      obj.searchText = "Law";
+                      function myFunction(el)
+                      {
+                          var nameval = el.value;
+                          var obje = { id: id, nameval: nameval, obj: obj };
+                          $.ajax({
+                              type: "post",
+                              url: "/controllername/actionname",
+                              data: obje,
+                              datatype: "json",
+                              success: function(re){
+                                  $("#showarea").html(re);
+                              },
+                              error: function(err){
+                                  $("#showarea").html(err);
+                              }
+                          });
+                      }
+                  </script>
+                  
+         In controller: namespace Test.Controllers
+                        {
+                            public class JSController
+                            {
+                                public ActionResult SearchAction(int id, string nameval, SearchArea obj)
+                                {
+                                    string innerhtml = "";
+                                    innerhtml += "id is: " + id.ToString() + "<br />";
+                                    innerhtml += "name is: " + nameval + "<br />";
+                                    foreach(PropertyInfo p in obj.GetType().GetProperties())
+                                    {
+                                        innerhtml += p.Name + ":" + P.GetValue(obj) + "<br />";  //Write every property in obj.
+                                    }
+                                    return Content(innerhtml);
+                                }
+                            }
+                          
+                            public class SearchArea
+                            {
+                                public string searchName { get; set; }
+                                public int searchID { get; set; }
+                                public string searchText { get; set; }
+                            }
+                        }
