@@ -8,7 +8,7 @@ Today's mission:
                                   var obj = { param1: id, param2: selectedval };
                                   $.ajax({
                                       type: "post",
-                                      url: "controllername/actionname",
+                                      url: "/controllername/actionname",
                                       data: obj,
                                       success: function(sesponseTest){
                                           $("#testP").html(sesponseTest);
