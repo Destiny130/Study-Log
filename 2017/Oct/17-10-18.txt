@@ -1,0 +1,10 @@
+Today I write a html website:
+   1. I use html write a website, but didn't have close relation, just use '<a>' to connect each other.
+   2. Find JS can transport a 'xml' type data, which destination can be a website, and it will use node to fill in its 'input'.
+   3. And use back data's node to read data.
+
+
+Will figure out it later:
+   1. For now, I find 'onclick' just can't be used in '$(function(){  })'.
+   2. In 'select', 'change' function can only be used in '$(function(){  })'.
+   3. How to use master page in html? Only html(maybe have few JS).
