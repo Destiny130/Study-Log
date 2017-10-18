@@ -32,5 +32,6 @@ Not Fixed today:
    1. I tried to 'post' a array to 'Controller', I get it by using 'JsonResult' like: GetActionName(int id, JsonResult list).
       But I couldn't turn it to its original type, like 'string[]' or 'int[]'.
       I used parameter's property '.Data' and it's 'null'.
+      !! 17-10-18: Get 'string[]' in 'Controller' like GetActionName(string[] strs).
       
       
