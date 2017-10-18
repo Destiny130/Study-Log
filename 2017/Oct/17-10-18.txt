@@ -2,6 +2,7 @@ Today I write a html website:
    1. I use html write a website, but didn't have close relation, just use '<a>' to connect each other.
    2. Find JS can transport a 'xml' type data, which destination can be a website, and it will use node to fill in its 'input'.
    3. And use back data's node to read data.
+   4. Use JS write a simple autocomplete tools.
 
 
 Will figure out it later:
