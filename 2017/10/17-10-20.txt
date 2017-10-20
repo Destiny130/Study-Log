@@ -1,0 +1,20 @@
+var rxcardderailInfo = db.V_TRXCARDDETAIL.Where(t => t.ResellerKey == reseller.ResellerKey && t.TrxHeaderKey > 0);                //> -1 can work.
+
+FROM [dbo].[V_TRXCARDDETAIL] AS [V_TRXCARDDETAIL]) AS [Extent1]
+        WHERE ([Extent1].[ResellerKey] = @p__linq__0) AND ([Extent1].[TrxHeaderKey] > 0) AND ([Extent1].[TrxHeaderKey] >= 1)
+    )  AS [GroupBy1]',N'@p__linq__0 int',@p__linq__0=1
+    
+    
+    
+rxcardderailInfo =                     //This sentence is same as front.
+(from p in rxcardderailInfo
+ orderby p.TrxHeaderKey descending
+select p).Skip((pageNumber-1) * PageNum.Value). Take(PageNum.Value);
+
+FROM [dbo].[V_TRXCARDDETAIL] AS [V_TRXCARDDETAIL]) AS [Extent1]
+        WHERE ([Extent1].[ResellerKey] = @p__linq__0) AND ([Extent1].[TrxHeaderKey] > 0) AND ([Extent1].[TrxHeaderKey] >= 1)
+    )  AS [Project1]
+    ORDER BY [Project1].[TrxHeaderKey] DESC
+    OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY ',N'@p__linq__0 int',@p__linq__0=1
+TIMEOUT: 30seconds
+MORE INFORMATION PLEASE CHECK Instance5.
