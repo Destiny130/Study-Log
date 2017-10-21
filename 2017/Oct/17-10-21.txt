@@ -1,0 +1,4 @@
+String as a model type in MVC is a nightmare, because if you do this in a controller:
+    string myStringModel = "Hello world";
+    return View("action", myStringModel);
+It ends up choosing the wrong overload, and passing the myStringModel as a master name to the view engine.
