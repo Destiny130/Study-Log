@@ -3,7 +3,7 @@ Today's studies:
    2. To transform xml data as its originally, use 'HtmlEncode(xmldata)' in 'Controller', then transform it as a string.
    3. Used 'style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px"' 
       to control a long string show in a single line, other part show as a '...'.
-   4. 'position:absolute' is realated with its father container.
+   4. 'position:absolute' is realated with its parent container.
    5. 'word-break' has three mode:
           break-all: according to container's width to wrap, it can break a word to two parts.
           keep-all: keep word's completeness when line wrap.
