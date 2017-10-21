@@ -2,4 +2,6 @@ String as a model type in MVC is a nightmare, because if you do this in a contro
     string myStringModel = "Hello world";
     return View("action", myStringModel);
 It ends up choosing the wrong overload, and passing the myStringModel as a master name to the view engine.
+In general it is easier simply to wrap it in a proper model type, as the accepted answer describes, but you can also simply force the compiler to choose the correct overload of View() by casting the string to object:
+    return View("action", (object)myStringModel);
 https://stackoverflow.com/questions/16852537/string-as-a-model
