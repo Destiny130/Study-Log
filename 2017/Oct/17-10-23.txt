@@ -1,0 +1,7 @@
+One:
+   1. Using a helper method can show different nav to different role.
+   2. 
+   
+Three:
+   1. Can ajax do a function like search? 
+      I will have a try! Using ajax into an action, and jump to a URL, don't write 'success' method.
