@@ -1,1 +1,6 @@
-Today I want to use ajax create a search view which without refresh web page.
+Today:
+   1. Using '<![CDATA[......]]>' to transaction your xml data in xml.
+
+
+Third:
+   1. I want to use ajax create a search view which without refresh web page.
