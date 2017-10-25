@@ -1,0 +1,6 @@
+Few articles to solve huge database count.
+https://social.msdn.microsoft.com/Forums/sqlserver/en-US/1b76cd84-214a-4d7a-aec1-044257c940a9/select-count-taking-several-minutes-even-after-rebuilding-cluster-index?forum=sqldatabaseengine 
+https://stackoverflow.com/questions/12479677/sql-server-count-is-slow 
+https://stackoverflow.com/questions/13628928/sql-server-speed-up-count-on-large-table 
+
+http://www.sql-server-performance.com/forum/threads/a-simple-select-count-statement-takes-about-15-min.32434/ 
