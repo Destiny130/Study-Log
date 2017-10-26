@@ -1,3 +1,9 @@
 Today:
    1. SELECT COUNT(*) from (SELECT * FROM SearchTest where CreateDate>'2017-10-26') s 
       where RequestMsg LIKE '%<test5>6</test5>%' AND ResponseMsg LIKE '%<GWE>4</GWE>%'
+   2. SELECT COUNT(*)                 --* can change to other condition
+      FROM 
+          (SELECT RequestMsg          --RequestMsg can change to other condition
+           FROM SearchTest 
+           where RequestMsg LIKE '%<test5>6</test5>%' AND ResponseMsg LIKE '%<GWE>4</GWE>%'
+          ) s
