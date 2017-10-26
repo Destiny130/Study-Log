@@ -3,6 +3,27 @@ Today's studies:
    2. To transform xml data as its originally, use 'HtmlEncode(xmldata)' in 'Controller', then transform it as a string.
    3. Used 'style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px"' 
       to control a long string show in a single line, other part show as a '...'.
+          <script>
+              function getDetails(obj) {
+                  //var showP = $(obj).siblings("#showDetails");
+                  $(obj).children("#showDetails").css("display", "block");
+              }
+              function mouseleft(obj) {
+                  //$(obj).siblings("#showDetails").css("display", "none");
+                  $(obj).children("#showDetails").css("display", "none");
+              }
+          </script>
+          <td id=@item.TraceKey onmouseover="getDetails(this)" onmouseout="mouseleft(this)">
+              <p style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px">
+                  @Html.DisplayFor(model => item.RequestMsg)
+              </p>
+              @if (item.RequestMsg.Trim() != null && item.RequestMsg.Trim() != "")
+              {
+                  <p id="showDetails" style="display:none;position:absolute;background-color:#eeeeee;padding:4px;border:1px solid black;width:430px;word-break:break-all;">
+                      @Html.DisplayFor(model => item.RequestMsg)
+                  </p>
+              }
+          </td>
    4. 'position:absolute' is realated with its parent container.
    5. 'word-break' has three mode:
           break-all: according to container's width to wrap, it can break a word to two parts.
