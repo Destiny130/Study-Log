@@ -1,4 +1,4 @@
-Today's studies:
+﻿Today's studies:
    1. Using ajax in the program.
    2. To transform xml data as its originally, use 'HtmlEncode(xmldata)' in 'Controller', then transform it as a string.
    3. Used 'style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px"' 
