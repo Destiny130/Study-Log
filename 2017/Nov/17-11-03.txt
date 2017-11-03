@@ -4,4 +4,6 @@ Today:
           var temp = str.replace(/\^/g,'des');     //Specific character should escape first.
    2. We can use 'svg' element draw a Img in html.
           svgInner += '<path fill="none" stroke="#000000" d="M' + '0,0L2,2L6,8' + '"></path>';
+      Or use JS:
+          aSvg.setAttribute('width', 900);
    3. Complicated to use JS control 'svg', so I set its width and height at the beginning.
