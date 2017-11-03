@@ -1,0 +1,5 @@
+Today:
+   1. Using Exp in JS, replace all:
+          var temp = str.replace(/string/g,'des');
+          var temp = str.replace(/\^/g,'des');     //Specific character should escape first.
+   2. We can use 'svg' element draw a Img in html.
