@@ -1,0 +1,34 @@
+http://blog.csdn.net/u011456552/article/details/53442985
+https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
+
+<div>
+    <script>
+        function startAdd() {
+            var arr = [];
+            for (var j = 0; j < 9999999; j++)
+            {
+                arr[j] = j;
+            }
+
+            console.time("golbal");
+            var s = 0;
+            for (var i = 0; i < arr.length; i++) {
+                s += i;
+            }
+            console.log(s);
+            console.timeEnd("golbal");
+
+
+            console.time("golbal2");
+            var ss = 0;
+            arr.forEach(function(v){ss+=v;});
+            console.log(ss);
+            console.timeEnd("golbal2");
+
+        };
+    </script>
+    <button onclick="startAdd()">start</button>
+    <p id="each">each: </p>
+    <br />
+    <p id="for">for: </p>
+</div>
