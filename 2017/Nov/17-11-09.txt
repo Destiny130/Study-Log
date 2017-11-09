@@ -1,3 +1,15 @@
+js教程:javascript作用域(Scope)
+    https://www.douban.com/group/topic/17482597/
+How do JavaScript closures work?
+    https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+什么是闭包，我的理解
+    http://www.cnblogs.com/xiaotie/archive/2011/08/03/2126145.html
+A closure is the combination of a function and the lexical environment within which that function was declared.
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+
+
+
 http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
 
 <script>
@@ -42,4 +54,4 @@ http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
         }
     };
     alert(object.getNameFunc()());
-</script>
+</script> 
