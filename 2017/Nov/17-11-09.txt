@@ -17,8 +17,10 @@ http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
     var name = "The Window";
     var object = {
         name: "My Object",
-        getNameFunc: function () {
-            return function () {
+        getNameFunc: function a() {
+            console.log(this);
+            return function b() {
+                console.log(this);
                 return this.name;
             };
         }
@@ -28,9 +30,13 @@ http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
     var name = "The Window";
     var object = {
         name: "My Object",
-        getNameFunc: function () {
+        getNameFunc: function c() {
             var that = this;
-            return function () {
+            console.log(this);
+            console.log(that);
+            return function d() {
+                console.log(this);
+                console.log(that);
                 return that.name;
             };
         }
