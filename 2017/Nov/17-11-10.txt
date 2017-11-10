@@ -1,3 +1,5 @@
+About closure in JavaScript:
+
 Those articles are brilliant:
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
   https://www.cnblogs.com/Alex--Yang/p/3505285.html
