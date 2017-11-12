@@ -23,10 +23,7 @@ Today:
                                    else { Ymin = Ymin < k ? Ymin : k; Ymax = Ymax > k ? Ymax : k; }
                                }
                            }
-                           var reg = /\^/g;
-                           var temp = strokes[i].replace(reg, 'L');
-                           temp = temp.replace('L0,65535', '');
-                           svgInner += '<path fill="none" stroke="#000000" d="M' + temp + '"></path>';
+                           svgInner += '<path fill="none" stroke="#000000" d="M' + strokes[i].replace(/\^/g, 'L').replace('L0,65535', '') + '"></path>';
                        }
                        signSvg.innerHTML = svgInner;
                        signSvg.setAttribute('width', Xmax + 10);//-Xmin);
