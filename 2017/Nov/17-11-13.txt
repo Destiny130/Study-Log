@@ -1,0 +1,4 @@
+Today:
+   1. Add xml to string in JS:
+          https://segmentfault.com/q/1010000007489385
+          
