@@ -1,0 +1,10 @@
+
+
+
+I want to write a function with dynamic Linq.
+    https://stackoverflow.com/search?page=2&tab=Relevance&q=linq%20genericity
+    https://stackoverflow.com/questions/125400/generic-linq-query-predicate
+    
+    https://weblogs.asp.net/scottgu/dynamic-linq-part-1-using-the-linq-dynamic-query-library
+    https://weblogs.asp.net/davidfowler/dynamic-linq-a-little-more-dynamic
+    https://weblogs.asp.net/davidfowler/dynamic-linq-part-2-evolution
